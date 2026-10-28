@@ -1,12 +1,8 @@
 # 🧠 Student Social Media & Mental Health Impact: AI Diagnostic Suite
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-streamlit-app-url.streamlit.app/)
-[![Python 3.12](https://img.shields.io/badge/Python-3.12-blue.svg)](https://www.python.org/)
-[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.6+-orange.svg)](https://scikit-learn.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
-
 An interactive Machine Learning dashboard designed to analyze and predict the impact of social media habits, screen time, and lifestyle factors on student mental health. Powered by a highly accurate **Random Forest Regressor** (R² = ~89%), this application serves as both a diagnostic tool and a "what-if" habit simulator for digital wellness.
 
+This application is deployed on **Streamlit Community Cloud**. 
+You can access the live version here: https://gvfc7jyhx6n6r852ev6zfk.streamlit.app/
 ## 🚀 Key Features
 
 * **🎯 Live Prediction & Diagnosis:** Input student demographics, screen time limits, and sleep schedules to receive a real-time Mental Health Score prediction alongside AI-driven wellness recommendations.
@@ -75,11 +71,5 @@ The core of this application is a supervised regression pipeline built using `sc
   * **Mean Absolute Error (MAE):** 0.3214
   * **Root Mean Squared Error (RMSE):** 0.4312
 
-## 🌐 Live Deployment
 
-This application is deployed on **Streamlit Community Cloud**. 
-You can access the live version here: **[Link to your live app]** *(Note: Replace this link with your actual Streamlit URL once deployed)*.
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
