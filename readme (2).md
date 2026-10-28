@@ -18,6 +18,21 @@ You can access the live version here: https://gvfc7jyhx6n6r852ev6zfk.streamlit.a
 * **Data Visualization:** Plotly Express, Plotly Graph Objects
 * **Model Serialization:** Joblib
 
+* ## 🧠 Machine Learning Architecture
+
+The core of this application is a supervised regression pipeline built using `scikit-learn`. 
+
+* **Preprocessing:** A unified `ColumnTransformer` handles:
+  * **Skewed Numeric Data:** Logarithmic transformation (`np.log1p`) followed by Standard Scaling.
+  * **Standard Numeric Data:** Outlier clipping and Standard Scaling.
+  * **Ordinal Data:** Rank-preserving `OrdinalEncoder` (e.g., Stress Levels).
+  * **Categorical Data:** Nominal feature grouping and `OneHotEncoder`.
+* **Estimator:** `RandomForestRegressor(random_state=42)` 
+* **Performance Metrics (Test Set):**
+  * **R² Score:** 0.8928
+  * **Mean Absolute Error (MAE):** 0.3214
+  * **Root Mean Squared Error (RMSE):** 0.4312
+
 ## 📂 Repository Structure
 
 ```text
@@ -56,20 +71,7 @@ To run this project locally on your machine, follow these steps:
    ```
    The application will launch in your default web browser at `http://localhost:8501`.
 
-## 🧠 Machine Learning Architecture
 
-The core of this application is a supervised regression pipeline built using `scikit-learn`. 
-
-* **Preprocessing:** A unified `ColumnTransformer` handles:
-  * **Skewed Numeric Data:** Logarithmic transformation (`np.log1p`) followed by Standard Scaling.
-  * **Standard Numeric Data:** Outlier clipping and Standard Scaling.
-  * **Ordinal Data:** Rank-preserving `OrdinalEncoder` (e.g., Stress Levels).
-  * **Categorical Data:** Nominal feature grouping and `OneHotEncoder`.
-* **Estimator:** `RandomForestRegressor(random_state=42)` 
-* **Performance Metrics (Test Set):**
-  * **R² Score:** 0.8928
-  * **Mean Absolute Error (MAE):** 0.3214
-  * **Root Mean Squared Error (RMSE):** 0.4312
 
 
 
